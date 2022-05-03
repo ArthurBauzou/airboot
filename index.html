@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Copie Airbnb</title>
+</head>
+
+<body>
+
+    <!-- première barre de menu -->
+    <section class="navbar mx-4">
+
+        <div class="navbar navbar-left text-danger">
+            <i class="fa-brands fa-airbnb h1"></i>
+            <span class="h3 m-2 d-none d-lg-inline fw-bold">airbnb</span>
+        </div>
+
+        <div class="btn-group border rounded-pill shadow-sm">
+            <button class="btn mx-2 border-end text-truncate">Zone Géographique</button>
+            <button class="btn mx-2 border-end text-truncate">Ajouter des dates</button>
+            <button class="btn mx-2 text-truncate">ajouter des voyageurs</button>
+            <button class="btn-danger rounded-circle m-2 p-1 px-2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="navbar-right navbar gap-2">
+            <button class="btn-light btn rounded-pill fw-bold">Devenez hôte</button>
+            <button class="btn-light rounded-circle p-2 py-1">
+                <i class="fa-solid fa-globe"></i>
+            </button>
+            <div class="button-group rounded-pill border">
+                <button class="btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button class="btn">
+                    <i class="fa-solid fa-circle-user fs-3"></i>
+                </button>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!-- barre de tags et filtres -->
+    <section class="py-3 border-bottom d-flex justify-content-between">
+        <div class="navbar-left px-4 border-end">
+            <button class="btn border rounded-pill">
+                <span>Prix</span>
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <button class="btn border rounded-pill">
+                <span>Type de logement</span>
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+        </div>
+
+        <div class="d-flex gap-4">
+            <span class="rounded-pill border p-2 px-4">Annulation gratuite</span>
+            <span class="rounded-pill border p-2 px-4">Bord de mer</span>
+            <span class="rounded-pill border p-2 px-4">Piscine</span>
+            <span class="rounded-pill border p-2 px-4 d-none d-lg-inline">Wifi</span>
+            <span class="rounded-pill border p-2 px-4 d-none d-xl-inline">Parking gratuit</span>
+        </div>
+
+        <button class="btn navbar-right border rounded-pill mx-4">
+            <i class="fa-solid fa-gears"></i>
+            <span class="d-none d-lg-inline">Filtres</span>
+        </button>
+    </section>
+
+    <!-- MAIN -->
+    <main class="row">
+
+        <!-- resultats de la recherche -->
+        <section class="col-lg-7 col-xl-6 col-md-12">
+            <div class="container my-2">
+                <p>plus de 3000 logements disponibles</p>
+                <p class="text-secondary d-flex">
+                    <i class="fa-solid fa-suitcase text-danger m-3"></i>
+                    Votre voyage débute dans 7 jours.
+                    Utilisez le filtre Réservation instantanée pour consulter les logements que vous pouvez réserver immédiatement.</p>
+                <p>classement par ordre de pertinence</p>
+            </div>
+            <div class="container row">
+                <div class="rounded" style="background-color: grey; width: 256px; height: 196px" ></div>
+                <div>
+                    <p class="text-secondary text-truncate">Logement entier : appartement · Le Mans</p>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- carte -->
+        <section class="container col-lg-5 col-xl-6 d-none d-lg-block">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d43419.34407870949!2d-2.2163840571824927!3d47.14396681402334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1651571761293!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
