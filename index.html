@@ -12,31 +12,31 @@
     <title>Copie Airbnb</title>
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
 
     <!-- première barre de menu -->
-    <section class="navbar mx-4">
+    <section class="navbar mx-4 flex-nowrap">
 
-        <div class="navbar navbar-left text-danger">
+        <div class="navbar navbar-left text-danger flex-nowrap">
             <i class="fa-brands fa-airbnb h1"></i>
             <span class="h3 m-2 d-none d-lg-inline fw-bold">airbnb</span>
         </div>
 
-        <div class="btn-group border rounded-pill shadow-sm">
-            <button class="btn mx-2 border-end text-truncate">Zone Géographique</button>
-            <button class="btn mx-2 border-end text-truncate">Ajouter des dates</button>
-            <button class="btn mx-2 text-truncate">ajouter des voyageurs</button>
+        <div class="border rounded-pill shadow-sm btn-group flex-shrink-1">
+            <button class="btn mx-2 border-end flex-shrink-1 text-truncate">Zone Géographique</button>
+            <button class="btn mx-2 border-end flex-shrink-1 text-truncate">Ajouter des dates</button>
+            <button class="btn mx-2 flex-shrink-1 text-truncate">Ajouter des voyageurs</button>
             <button class="btn-danger rounded-circle m-2 p-1 px-2">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
 
-        <div class="navbar-right navbar gap-2">
+        <div class="navbar-right navbar gap-2 flex-nowrap">
             <button class="btn-light btn rounded-pill fw-bold">Devenez hôte</button>
             <button class="btn-light rounded-circle p-2 py-1">
                 <i class="fa-solid fa-globe"></i>
             </button>
-            <div class="button-group rounded-pill border">
+            <div class="button-group rounded-pill border d-flex flex-nowrap">
                 <button class="btn">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -80,8 +80,8 @@
     <main class="row">
 
         <!-- resultats de la recherche -->
-        <section class="col-lg-7 col-xl-6 col-md-12">
-            <div class="container my-2">
+        <section class="col-lg-12 col-xl-7" style="font-size: 14px">
+            <div class="container my-2 mb-3">
                 <p>plus de 3000 logements disponibles</p>
                 <p class="text-secondary d-flex">
                     <i class="fa-solid fa-suitcase text-danger m-3"></i>
@@ -89,11 +89,112 @@
                     Utilisez le filtre Réservation instantanée pour consulter les logements que vous pouvez réserver immédiatement.</p>
                 <p>classement par ordre de pertinence</p>
             </div>
-            <div class="container row">
-                <div class="rounded" style="background-color: grey; width: 256px; height: 196px" ></div>
-                <div>
-                    <p class="text-secondary text-truncate">Logement entier : appartement · Le Mans</p>
 
+            <div class="container d-flex gap-3 m-4 ps-0 border-bottom pb-4">
+                <div class="col-4 mx-0" style="background-color: grey; height: 200px; min-width: 300px; border-radius: 16px;" ></div>
+                <div class="container mx-0 px-0 flex-column d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">
+                        <p class="text-secondary text-truncate my-0">Logement entier : appartement · Le Mans</p>
+                        <i class="fa-regular fa-heart h4 my-0"></i>
+                    </div>
+                    <p class="h5">Studio</p>
+                    <div class="border-bottom" style="width: 48px; height: 8px"></div>
+                    <p class="text-secondary" style="margin-bottom: 2px;">1 voyageur · 1 lit · 1 chambre · 1 salle de bain</p>
+                    <p class="text-secondary" style="margin-top: 2px;">parking gratuit · wifi · cuisine</p>
+                    <div class="my-auto" style="width: 48px; height: 12px"></div>
+                    <div class="d-flex justify-content-between">
+                        <div class="align-self-end">
+                            <i class="fa-solid fa-star text-danger"></i>
+                            <strong>4,81</strong>
+                            <span class="text-secondary">(15 commentaires)</span>
+                        </div>
+                        <div class="fs-5">
+                            <s class="text-secondary">1245€</s>
+                            <strong>885€</strong>
+                            <span>/mois</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container d-flex gap-3 m-4 ps-0 border-bottom pb-4">
+                <div class="col-4 flex-shrink-0" style="background-color: grey; height: 200px; width: 300px; border-radius: 16px;" ></div>
+                <div class="container px-0 d-flex flex-column justify-content-between flex-shrink-1">
+                    <div class="d-flex justify-content-between ">
+                        <p class="text-secondary text-truncate my-0">Logement entier : maison · Particulier · Nochize</p>
+                        <i class="fa-regular fa-heart h4 my-0"></i>
+                    </div>
+                    <p class="h5">Supayre MAISON</p>
+                    <div class="border-bottom" style="width: 48px; height: 8px"></div>
+                    <p class="text-secondary text-truncate" style="margin-bottom: 2px">12 voyageurs · 1 lit (mais il est grand promis) · 1 chambre · 1 salle de bains</p>
+                    <p class="text-secondary" style="margin-top: 2px;">poules · gros chien touffu · cave</p>
+                    <div class="my-auto" style="width: 48px; height: 12px"></div>
+                    <div class="d-flex justify-content-between">
+                        <div class="align-self-end">
+                            <i class="fa-solid fa-star text-danger"></i>
+                            <strong>1,42</strong>
+                            <span class="text-secondary">(6 commentaires)</span>
+                        </div>
+                        <div class="fs-5">
+                            <s class="text-secondary">320€</s>
+                            <strong>11€</strong>
+                            <span>/mois</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container d-flex gap-3 m-4 border-bottom pb-4 ps-0">
+                <div class="col-4" style="background-color: grey; height: 200px; min-width: 300px; border-radius: 16px;" ></div>
+                <div class="container px-0 flex-column d-flex justify-content-between">
+                    <div class="d-flex justify-content-between ">
+                        <p class="text-secondary text-truncate my-0">Chambre privée · Particulier · La Valette-du-Var</p>
+                        <i class="fa-regular fa-heart h4 my-0"></i>
+                    </div>
+                    <p class="h5">Chambre dans une villa à 10min de l’université</p>
+                    <div class="border-bottom" style="width: 48px; height: 8px"></div>
+                    <p class="text-secondary" style="margin-bottom: 2px;">1 voyageur · 1 chambre · 1 salle de bain partagée</p>
+                    <p class="text-secondary" style="margin-top: 2px;">parking gratuit · wifi · époustouflantes gogues</p>
+                    <div class="my-auto" style="width: 48px; height: 12px"></div>
+                    <div class="d-flex justify-content-between">
+                        <div class="align-self-end">
+                            <i class="fa-solid fa-star text-danger"></i>
+                            <strong>4,82</strong>
+                            <span class="text-secondary">(67 commentaires)</span>
+                        </div>
+                        <div class="fs-5">
+                            <s class="text-secondary">1188€</s>
+                            <strong>655€</strong>
+                            <span>/mois</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container d-flex gap-3 m-4 border-bottom pb-4 ps-0">
+                <div class="" style="background-color: grey; min-width: 300px; height: 200px; border-radius: 16px;" ></div>
+                <div class="container px-0 flex-column d-flex justify-content-between">
+                    <div class="d-flex justify-content-between ">
+                        <p class="text-secondary text-truncate my-0">Chambre privée · Professionnel · La chaux de fonds</p>
+                        <i class="fa-regular fa-heart h4 my-0"></i>
+                    </div>
+                    <p class="h5">CHB NEW YORK T5 of shit</p>
+                    <div class="border-bottom" style="width: 48px; height: 12px"></div>
+                    <p class="text-secondary" style="margin-bottom: 2px;">1 voyageur · 1 lit · 1 chambre · 1 salle de bain partagée</p>
+                    <p class="text-secondary" style="margin-top: 2px;">parking gratuit · wifi · cuisine</p>
+                    <div class="my-auto" style="width: 48px; height: 12px"></div>
+                    <div class="d-flex justify-content-between">
+                        <div class="align-self-end">
+                            <i class="fa-solid fa-star text-danger"></i>
+                            <strong>3,57</strong>
+                            <span class="text-secondary">(8 commentaires)</span>
+                        </div>
+                        <div class="fs-5">
+                            <s class="text-secondary">1863€</s>
+                            <strong>1113€</strong>
+                            <span>/mois</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -101,8 +202,8 @@
 
 
         <!-- carte -->
-        <section class="container col-lg-5 col-xl-6 d-none d-lg-block">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d43419.34407870949!2d-2.2163840571824927!3d47.14396681402334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1651571761293!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="container col-xl-5 d-none d-xl-block">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d93082.16006172531!2d28.959380701407653!3d41.04475612992171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1651588293741!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     
