@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,15 +16,16 @@
 <body style="overflow-x: hidden;">
 
     <!-- barre de menu -->
-    <section class="px-4 flex-nowrap position-sticky top-0 bg-white border-bottom">
+    <section class="px-4 flex-nowrap position-sticky top-0 bg-white border-bottom" style="z-index:10">
 
         <!-- barre haute : home, recherche et profil -->
         <div class="navbar flex-nowrap">
+            <!-- home -->
             <div class="navbar-left text-danger flex-nowrap">
                 <i class="fa-brands fa-airbnb h1"></i>
                 <span class="h3 m-2 d-none d-lg-inline fw-bold">airbnb</span>
             </div>
-
+            <!-- search -->
             <div class="border rounded-pill shadow-sm btn-group">
                 <button class="btn mx-2 border-end text-truncate">Zone Géographique</button>
                 <button class="btn mx-2 border-end text-truncate">Ajouter des dates</button>
@@ -34,7 +34,7 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
-
+            <!-- profil -->
             <div class="navbar-right navbar gap-2 flex-nowrap">
                 <button class="btn-light btn rounded-pill fw-bold text-nowrap">Devenez hôte</button>
                 <button class="btn-light rounded-circle p-2 py-1">
@@ -47,13 +47,14 @@
                     <button class="btn">
                         <i class="fa-solid fa-circle-user fs-3"></i>
                     </button>
-
                 </div>
             </div>
+
         </div>
 
         <!-- barre de tags et filtres -->
         <div class="py-3 d-flex justify-content-between">
+            <!-- boutons -->
             <div class="navbar-left pe-4 border-end d-flex flex-nowrap gap-2">
                 <button class="btn border rounded-pill text-nowrap">
                     <span>Prix</span>
@@ -64,7 +65,7 @@
                     <i class="fa-solid fa-angle-down"></i>
                 </button>
             </div>
-
+            <!-- tags -->
             <div class="d-flex gap-2">
                 <span class="rounded-pill border p-2 px-4 text-nowrap">Annulation gratuite</span>
                 <span class="rounded-pill border p-2 px-4 text-nowrap">Bord de mer</span>
@@ -72,7 +73,7 @@
                 <span class="rounded-pill border p-2 px-4 d-none d-lg-inline text-nowrap">Wifi</span>
                 <span class="rounded-pill border p-2 px-4 d-none d-xl-inline text-nowrap">Parking gratuit</span>
             </div>
-
+            <!-- filtres -->
             <button class="btn navbar-right border rounded-pill ms-4">
                 <i class="fa-solid fa-gears"></i>
                 <span class="d-none d-lg-inline">Filtres</span>
@@ -80,27 +81,26 @@
         </div>
     </section>
 
-
     <!-- MAIN -->
     <main class="row">
 
-        <!-- resultats de la recherche -->
+        <!-- RESULTS -->
         <section class="col-lg-12 col-xl-7" style="font-size: 14px">
+
+            <!-- Informations preliminaires -->
             <div class="container my-2 mb-3">
                 <p>plus de 3000 logements disponibles</p>
                 <p class="text-secondary d-flex">
                     <i class="fa-solid fa-suitcase text-danger m-3"></i>
-                    Votre voyage débute dans 7 jours.
-                    Utilisez le filtre Réservation instantanée pour consulter les logements que vous pouvez réserver
-                    immédiatement.
+                    Votre voyage débute dans 7 jours. Utilisez le filtre Réservation instantanée pour consulter les logements que vous pouvez réserver immédiatement.
                 </p>
                 <p>classement par ordre de pertinence</p>
             </div>
 
+            <!-- premier résultat -->
             <div class="d-flex gap-3 m-4 ps-0 border-bottom pb-4 me-4">
-
                 <!-- caroussel -->
-                <div id="carou-1" class="carousel slide flex-shrink-0" data-bs-ride="false" data-bs-interval="false">
+                <div id="carou-1" class="carousel slide flex-shrink-0 text-dark" data-bs-ride="false" data-bs-interval="false">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carou-1" data-bs-slide-to="0" class="active rounded-circle" aria-current="true" aria-label="Slide 1" style="width: 8px; height: 8px; "></button>
                         <button type="button" data-bs-target="#carou-1" data-bs-slide-to="1" aria-label="Slide 2" class="rounded-circle" style="width: 8px; height: 8px;"></button>
@@ -124,17 +124,15 @@
                     </div>
                     <!-- boutons suivant et precedents -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carou-1" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon bg-light rounded-circle" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carou-1" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon bg-light rounded-circle" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-
-
-
+                <!-- infos sur le résultat -->
                 <div class="container mx-0 px-0 flex-column d-flex justify-content-between">
                     <div class="d-flex justify-content-between">
                         <p class="text-secondary text-truncate my-0">Logement entier : appartement · Le Mans</p>
@@ -142,8 +140,7 @@
                     </div>
                     <p class="h5">Studio</p>
                     <div class="border-bottom" style="width: 48px; height: 8px"></div>
-                    <p class="text-secondary" style="margin-bottom: 2px;">1 voyageur · 1 lit · 1 chambre · 1 salle de
-                        bain</p>
+                    <p class="text-secondary" style="margin-bottom: 2px;">1 voyageur · 1 lit · 1 chambre · 1 salle de bain</p>
                     <p class="text-secondary" style="margin-top: 2px;">parking gratuit · wifi · cuisine</p>
                     <div class="my-auto" style="width: 48px; height: 12px"></div>
                     <div class="d-flex justify-content-between">
@@ -161,19 +158,20 @@
                 </div>
             </div>
 
+            <!-- second résultat -->
             <div class="d-flex gap-3 m-4 ps-0 border-bottom pb-4 me-4">
-                <div class="col-4 mx-0"
-                    style="background-color: grey; height: 200px; min-width: 300px; border-radius: 16px;"></div>
-                <div class="container px-0 d-flex flex-column justify-content-between">
+                <!-- ici le carousel normalement -->
+                <div class="" style="background-color: grey; min-width: 300px; height: 200px; border-radius: 16px;">
+                </div>
+                <!-- infos sur le résultat -->
+                <div class="container px-0 flex-column d-flex justify-content-between">
                     <div class="d-flex justify-content-between ">
-                        <p class="text-secondary text-truncate my-0">Logement entier : maison · Particulier · Nochize
-                        </p>
+                        <p class="text-secondary text-truncate my-0">Logement entier : maison · Particulier · Nochize</p>
                         <i class="fa-regular fa-heart h4 my-0"></i>
                     </div>
                     <p class="h5">Supayre MAISON</p>
                     <div class="border-bottom" style="width: 48px; height: 8px"></div>
-                    <p class="text-secondary" style="margin-bottom: 2px">12 voyageurs · 1 lit (mais il est grand promis)
-                        · 1 chambre · 1 salle de bains</p>
+                    <p class="text-secondary" style="margin-bottom: 2px">12 voyageurs · 1 lit (mais il est grand promis) · 1 chambre · 1 salle de bains</p>
                     <p class="text-secondary" style="margin-top: 2px;">poules · gros chien touffu · cave</p>
                     <div class="my-auto" style="width: 48px; height: 12px"></div>
                     <div class="d-flex justify-content-between">
@@ -191,21 +189,21 @@
                 </div>
             </div>
 
+            <!-- troisième resultat -->
             <div class="d-flex gap-3 m-4 border-bottom pb-4 ps-0 me-4">
-                <div class="col-4"
-                    style="background-color: grey; height: 200px; min-width: 300px; border-radius: 16px;"></div>
+                <!-- ici le carousel normalement -->
+                <div class="" style="background-color: grey; min-width: 300px; height: 200px; border-radius: 16px;">
+                </div>
+                <!-- infos sur le résultat -->
                 <div class="container px-0 flex-column d-flex justify-content-between">
                     <div class="d-flex justify-content-between ">
-                        <p class="text-secondary text-truncate my-0">Chambre privée · Particulier · La Valette-du-Var
-                        </p>
+                        <p class="text-secondary text-truncate my-0">Chambre privée · Particulier · La Valette-du-Var</p>
                         <i class="fa-regular fa-heart h4 my-0"></i>
                     </div>
                     <p class="h5">Chambre dans une villa à 10min de l’université</p>
                     <div class="border-bottom" style="width: 48px; height: 8px"></div>
-                    <p class="text-secondary" style="margin-bottom: 2px;">1 voyageur · 1 chambre · 1 salle de bain
-                        partagée</p>
-                    <p class="text-secondary" style="margin-top: 2px;">parking gratuit · wifi · époustouflantes gogues
-                    </p>
+                    <p class="text-secondary" style="margin-bottom: 2px;">1 voyageur · 1 chambre · 1 salle de bain partagée</p>
+                    <p class="text-secondary" style="margin-top: 2px;">parking gratuit · wifi · époustouflantes gogues </p>
                     <div class="my-auto" style="width: 48px; height: 12px"></div>
                     <div class="d-flex justify-content-between">
                         <div class="align-self-end">
@@ -222,9 +220,12 @@
                 </div>
             </div>
 
+            <!-- quatrième résultat -->
             <div class="d-flex gap-3 m-4 border-bottom pb-4 ps-0 me-4">
+                <!-- ici le carousel normalement -->
                 <div class="" style="background-color: grey; min-width: 300px; height: 200px; border-radius: 16px;">
                 </div>
+                <!-- infos sur le résultat -->
                 <div class="container px-0 flex-column d-flex justify-content-between">
                     <div class="d-flex justify-content-between ">
                         <p class="text-secondary my-0">Chambre privée · Professionnel · La chaux de fonds</p>
@@ -250,23 +251,19 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
-
-        <!-- carte -->
+        <!-- CARTE -->
         <section class="col-xl-5 d-none d-xl-block g-0 vh-100 position-fixed end-0">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d93082.16006172531!2d28.959380701407653!3d41.04475612992171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1651588293741!5m2!1sfr!2sfr"
                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+
     </main>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 
